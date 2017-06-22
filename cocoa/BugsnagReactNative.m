@@ -1,4 +1,4 @@
-#import "Bugsnag.h"
+#import <Bugsnag/Bugsnag.h>
 #import "BugsnagReactNative.h"
 #import <React/RCTConvert.h>
 
@@ -252,13 +252,14 @@ RCT_EXPORT_METHOD(startWithOptions:(NSDictionary *)options) {
 
 #ifdef DEBUG
     return @"development";
-#endif
+#else
     BOOL isRunningTestFlightBeta = [[[[NSBundle mainBundle] appStoreReceiptURL] lastPathComponent] isEqualToString:@"sandboxReceipt"];
     if (isRunningTestFlightBeta) {
         return @"testflight";
     } else {
         return @"production";
     }
+#endif
 }
 
 @end

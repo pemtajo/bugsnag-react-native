@@ -4,3 +4,6 @@ lib
 *.bundle
 local.properties
 .idea
+xcuserdata
+.DS_Store
+Carthage

@@ -1,0 +1,3 @@
+github "nubank/ios-yoga-dynamic-framework" "master"
+github "nubank/ios-react-native-dynamic-framework" "master"
+github "bugsnag/bugsnag-cocoa"
