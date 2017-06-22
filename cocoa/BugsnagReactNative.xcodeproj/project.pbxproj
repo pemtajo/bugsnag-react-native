@@ -11,6 +11,13 @@
 		6BC35E8A1EFC61DD00996C0E /* KSCrash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC35E861EFC61DD00996C0E /* KSCrash.framework */; };
 		6BC35E8B1EFC61DD00996C0E /* React.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC35E871EFC61DD00996C0E /* React.framework */; };
 		6BC35E8C1EFC61DD00996C0E /* Yoga.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC35E881EFC61DD00996C0E /* Yoga.framework */; };
+		6BC35EA31EFC637600996C0E /* BugsnagReactNativeFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BC35EA11EFC637600996C0E /* BugsnagReactNativeFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BC35EA71EFC639A00996C0E /* BugsnagReactNative.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AD256161D6DE5F600C7D842 /* BugsnagReactNative.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BC35EA91EFC63E500996C0E /* Bugsnag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC35E851EFC61DD00996C0E /* Bugsnag.framework */; };
+		6BC35EAA1EFC63E500996C0E /* KSCrash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC35E861EFC61DD00996C0E /* KSCrash.framework */; };
+		6BC35EAB1EFC63E500996C0E /* React.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC35E871EFC61DD00996C0E /* React.framework */; };
+		6BC35EAC1EFC63E500996C0E /* Yoga.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC35E881EFC61DD00996C0E /* Yoga.framework */; };
+		6BC35EAD1EFC647C00996C0E /* BugsnagReactNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD256181D6DE5F600C7D842 /* BugsnagReactNative.m */; };
 		8AD256171D6DE5F600C7D842 /* BugsnagReactNative.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AD256161D6DE5F600C7D842 /* BugsnagReactNative.h */; };
 		8AD256191D6DE5F600C7D842 /* BugsnagReactNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD256181D6DE5F600C7D842 /* BugsnagReactNative.m */; };
 /* End PBXBuildFile section */
@@ -33,12 +40,26 @@
 		6BC35E861EFC61DD00996C0E /* KSCrash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KSCrash.framework; path = ../Carthage/Build/iOS/KSCrash.framework; sourceTree = "<group>"; };
 		6BC35E871EFC61DD00996C0E /* React.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = React.framework; path = ../Carthage/Build/iOS/React.framework; sourceTree = "<group>"; };
 		6BC35E881EFC61DD00996C0E /* Yoga.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Yoga.framework; path = ../Carthage/Build/iOS/Yoga.framework; sourceTree = "<group>"; };
+		6BC35E9F1EFC637600996C0E /* BugsnagReactNativeFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BugsnagReactNativeFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BC35EA11EFC637600996C0E /* BugsnagReactNativeFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BugsnagReactNativeFramework.h; sourceTree = "<group>"; };
+		6BC35EA21EFC637600996C0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AD256131D6DE5F600C7D842 /* libBugsnagReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBugsnagReactNative.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AD256161D6DE5F600C7D842 /* BugsnagReactNative.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BugsnagReactNative.h; sourceTree = SOURCE_ROOT; };
 		8AD256181D6DE5F600C7D842 /* BugsnagReactNative.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BugsnagReactNative.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6BC35E9B1EFC637600996C0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BC35EA91EFC63E500996C0E /* Bugsnag.framework in Frameworks */,
+				6BC35EAA1EFC63E500996C0E /* KSCrash.framework in Frameworks */,
+				6BC35EAB1EFC63E500996C0E /* React.framework in Frameworks */,
+				6BC35EAC1EFC63E500996C0E /* Yoga.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8AD256101D6DE5F600C7D842 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,10 +85,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6BC35EA01EFC637600996C0E /* BugsnagReactNativeFramework */ = {
+			isa = PBXGroup;
+			children = (
+				6BC35EA11EFC637600996C0E /* BugsnagReactNativeFramework.h */,
+				6BC35EA21EFC637600996C0E /* Info.plist */,
+			);
+			path = BugsnagReactNativeFramework;
+			sourceTree = "<group>";
+		};
 		8AD2560A1D6DE5F600C7D842 = {
 			isa = PBXGroup;
 			children = (
 				8AD256151D6DE5F600C7D842 /* BugsnagReactNative */,
+				6BC35EA01EFC637600996C0E /* BugsnagReactNativeFramework */,
 				8AD256141D6DE5F600C7D842 /* Products */,
 				6BC35E841EFC61DD00996C0E /* Frameworks */,
 			);
@@ -77,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				8AD256131D6DE5F600C7D842 /* libBugsnagReactNative.a */,
+				6BC35E9F1EFC637600996C0E /* BugsnagReactNativeFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,7 +124,37 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		6BC35E9C1EFC637600996C0E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BC35EA31EFC637600996C0E /* BugsnagReactNativeFramework.h in Headers */,
+				6BC35EA71EFC639A00996C0E /* BugsnagReactNative.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		6BC35E9E1EFC637600996C0E /* BugsnagReactNativeFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BC35EA61EFC637600996C0E /* Build configuration list for PBXNativeTarget "BugsnagReactNativeFramework" */;
+			buildPhases = (
+				6BC35E9A1EFC637600996C0E /* Sources */,
+				6BC35E9B1EFC637600996C0E /* Frameworks */,
+				6BC35E9C1EFC637600996C0E /* Headers */,
+				6BC35E9D1EFC637600996C0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BugsnagReactNativeFramework;
+			productName = BugsnagReactNativeFramework;
+			productReference = 6BC35E9F1EFC637600996C0E /* BugsnagReactNativeFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		8AD256121D6DE5F600C7D842 /* BugsnagReactNative */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AD2561C1D6DE5F600C7D842 /* Build configuration list for PBXNativeTarget "BugsnagReactNative" */;
@@ -116,9 +178,13 @@
 		8AD2560B1D6DE5F600C7D842 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Bugsnag, Inc.";
 				TargetAttributes = {
+					6BC35E9E1EFC637600996C0E = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
 					8AD256121D6DE5F600C7D842 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -137,11 +203,30 @@
 			projectRoot = "";
 			targets = (
 				8AD256121D6DE5F600C7D842 /* BugsnagReactNative */,
+				6BC35E9E1EFC637600996C0E /* BugsnagReactNativeFramework */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		6BC35E9D1EFC637600996C0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		6BC35E9A1EFC637600996C0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BC35EAD1EFC647C00996C0E /* BugsnagReactNative.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8AD2560F1D6DE5F600C7D842 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,6 +238,66 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		6BC35EA41EFC637600996C0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../Carthage/Build/iOS",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BugsnagReactNativeFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.nubank.BugsnagReactNativeFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6BC35EA51EFC637600996C0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../Carthage/Build/iOS",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BugsnagReactNativeFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.nubank.BugsnagReactNativeFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		8AD2561A1D6DE5F600C7D842 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -167,8 +312,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -212,8 +359,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -282,6 +431,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6BC35EA61EFC637600996C0E /* Build configuration list for PBXNativeTarget "BugsnagReactNativeFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BC35EA41EFC637600996C0E /* Debug */,
+				6BC35EA51EFC637600996C0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		8AD2560E1D6DE5F600C7D842 /* Build configuration list for PBXProject "BugsnagReactNative" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

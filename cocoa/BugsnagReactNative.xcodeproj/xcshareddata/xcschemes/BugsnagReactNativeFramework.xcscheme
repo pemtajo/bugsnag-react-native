@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8AD256121D6DE5F600C7D842"
-               BuildableName = "libBugsnagReactNative.a"
-               BlueprintName = "BugsnagReactNative"
+               BlueprintIdentifier = "6BC35E9E1EFC637600996C0E"
+               BuildableName = "BugsnagReactNativeFramework.framework"
+               BlueprintName = "BugsnagReactNativeFramework"
                ReferencedContainer = "container:BugsnagReactNative.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8AD256121D6DE5F600C7D842"
-            BuildableName = "libBugsnagReactNative.a"
-            BlueprintName = "BugsnagReactNative"
+            BlueprintIdentifier = "6BC35E9E1EFC637600996C0E"
+            BuildableName = "BugsnagReactNativeFramework.framework"
+            BlueprintName = "BugsnagReactNativeFramework"
             ReferencedContainer = "container:BugsnagReactNative.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8AD256121D6DE5F600C7D842"
-            BuildableName = "libBugsnagReactNative.a"
-            BlueprintName = "BugsnagReactNative"
+            BlueprintIdentifier = "6BC35E9E1EFC637600996C0E"
+            BuildableName = "BugsnagReactNativeFramework.framework"
+            BlueprintName = "BugsnagReactNativeFramework"
             ReferencedContainer = "container:BugsnagReactNative.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
