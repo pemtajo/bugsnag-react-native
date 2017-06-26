@@ -1,4 +1,3 @@
 github "bugsnag/bugsnag-cocoa" "v5.10.1"
 github "kstenerud/KSCrash" "1.8.13"
-github "nubank/ios-react-native-dynamic-framework" "5967e6b3b8df2d8115f87c4f62c2bdc2c7242fe3"
-github "nubank/ios-yoga-dynamic-framework" "c3e2c22c04575b990cf9a7e5fd94d0668e642908"
+github "nubank/ios-react-native" "346b5d9634eadb2e58a5dd1d5377218a3667d6c0"
