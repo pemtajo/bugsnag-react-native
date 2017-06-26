@@ -7,16 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BA79E801F01B6E20039EAE1 /* React.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA79E7F1F01B6E20039EAE1 /* React.framework */; };
 		6BC35E891EFC61DD00996C0E /* Bugsnag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC35E851EFC61DD00996C0E /* Bugsnag.framework */; };
 		6BC35E8A1EFC61DD00996C0E /* KSCrash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC35E861EFC61DD00996C0E /* KSCrash.framework */; };
-		6BC35E8B1EFC61DD00996C0E /* React.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC35E871EFC61DD00996C0E /* React.framework */; };
-		6BC35E8C1EFC61DD00996C0E /* Yoga.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC35E881EFC61DD00996C0E /* Yoga.framework */; };
 		6BC35EA31EFC637600996C0E /* BugsnagReactNativeFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BC35EA11EFC637600996C0E /* BugsnagReactNativeFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BC35EA71EFC639A00996C0E /* BugsnagReactNative.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AD256161D6DE5F600C7D842 /* BugsnagReactNative.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BC35EA91EFC63E500996C0E /* Bugsnag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC35E851EFC61DD00996C0E /* Bugsnag.framework */; };
 		6BC35EAA1EFC63E500996C0E /* KSCrash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC35E861EFC61DD00996C0E /* KSCrash.framework */; };
-		6BC35EAB1EFC63E500996C0E /* React.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC35E871EFC61DD00996C0E /* React.framework */; };
-		6BC35EAC1EFC63E500996C0E /* Yoga.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC35E881EFC61DD00996C0E /* Yoga.framework */; };
 		6BC35EAD1EFC647C00996C0E /* BugsnagReactNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD256181D6DE5F600C7D842 /* BugsnagReactNative.m */; };
 		8AD256171D6DE5F600C7D842 /* BugsnagReactNative.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AD256161D6DE5F600C7D842 /* BugsnagReactNative.h */; };
 		8AD256191D6DE5F600C7D842 /* BugsnagReactNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD256181D6DE5F600C7D842 /* BugsnagReactNative.m */; };
@@ -36,10 +33,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6BA79E7F1F01B6E20039EAE1 /* React.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = React.framework; path = ../Carthage/Build/iOS/React.framework; sourceTree = "<group>"; };
 		6BC35E851EFC61DD00996C0E /* Bugsnag.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bugsnag.framework; path = ../Carthage/Build/iOS/Bugsnag.framework; sourceTree = "<group>"; };
 		6BC35E861EFC61DD00996C0E /* KSCrash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KSCrash.framework; path = ../Carthage/Build/iOS/KSCrash.framework; sourceTree = "<group>"; };
-		6BC35E871EFC61DD00996C0E /* React.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = React.framework; path = ../Carthage/Build/iOS/React.framework; sourceTree = "<group>"; };
-		6BC35E881EFC61DD00996C0E /* Yoga.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Yoga.framework; path = ../Carthage/Build/iOS/Yoga.framework; sourceTree = "<group>"; };
 		6BC35E9F1EFC637600996C0E /* BugsnagReactNativeFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BugsnagReactNativeFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC35EA11EFC637600996C0E /* BugsnagReactNativeFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BugsnagReactNativeFramework.h; sourceTree = "<group>"; };
 		6BC35EA21EFC637600996C0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,8 +51,7 @@
 			files = (
 				6BC35EA91EFC63E500996C0E /* Bugsnag.framework in Frameworks */,
 				6BC35EAA1EFC63E500996C0E /* KSCrash.framework in Frameworks */,
-				6BC35EAB1EFC63E500996C0E /* React.framework in Frameworks */,
-				6BC35EAC1EFC63E500996C0E /* Yoga.framework in Frameworks */,
+				6BA79E801F01B6E20039EAE1 /* React.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,8 +61,6 @@
 			files = (
 				6BC35E891EFC61DD00996C0E /* Bugsnag.framework in Frameworks */,
 				6BC35E8A1EFC61DD00996C0E /* KSCrash.framework in Frameworks */,
-				6BC35E8B1EFC61DD00996C0E /* React.framework in Frameworks */,
-				6BC35E8C1EFC61DD00996C0E /* Yoga.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +70,9 @@
 		6BC35E841EFC61DD00996C0E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6BA79E7F1F01B6E20039EAE1 /* React.framework */,
 				6BC35E851EFC61DD00996C0E /* Bugsnag.framework */,
 				6BC35E861EFC61DD00996C0E /* KSCrash.framework */,
-				6BC35E871EFC61DD00996C0E /* React.framework */,
-				6BC35E881EFC61DD00996C0E /* Yoga.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -438,6 +430,7 @@
 				6BC35EA51EFC637600996C0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8AD2560E1D6DE5F600C7D842 /* Build configuration list for PBXProject "BugsnagReactNative" */ = {
 			isa = XCConfigurationList;

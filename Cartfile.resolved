@@ -1,3 +1,3 @@
 github "bugsnag/bugsnag-cocoa" "v5.10.1"
 github "kstenerud/KSCrash" "1.8.13"
-github "nubank/ios-react-native" "346b5d9634eadb2e58a5dd1d5377218a3667d6c0"
+github "nubank/ios-react-native" "4d9da0ef36010a823cf47498a548a77c34e5e8c5"
