@@ -1,3 +1,3 @@
 'use strict';
-import * as bugsnag from './lib/Bugsnag';
+import * as bugsnag from './src/Bugsnag';
 module.exports = bugsnag;
