@@ -1,2 +1,2 @@
-github "nubank/ios-react-native" "master"
-github "bugsnag/bugsnag-cocoa"
+github "nubank/ios-react-native" "v0.46.0-rc.2"
+github "bugsnag/bugsnag-cocoa" == 5.10.1
