@@ -14,9 +14,7 @@ Pod::Spec.new do |s|
   s.platform       = :ios, '8.0'
   s.preserve_paths = '*.js'
   s.libraries      = 'z', 'c++'
-  s.frameworks     = 'MessageUI', 'SystemConfiguration'
-
-  s.dependency 'React'
+  s.frameworks     = 'MessageUI', 'SystemConfiguration', 'React'
 
   s.source_files = 'cocoa/BugsnagReactNative.{h,m}',
                    'cocoa/vendor/bugsnag-cocoa/Source/*.{h,m,mm,cpp,c}',
