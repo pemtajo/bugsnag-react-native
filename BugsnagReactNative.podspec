@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.summary        = 'Bugsnag crash and error reporting for React Native apps'
   s.author         = { 'Delisa Mason' => 'iskanamagus@gmail.com' }
   s.homepage       = "https://docs.bugsnag.com/platforms/react-native"
-  s.source         = { :git => 'https://github.com/bugsnag/bugsnag-react-native.git', :tag => "v#{s.version}"}
+  s.source         = { :git => 'https://github.com/nubank/bugsnag-react-native.git', :tag => "v#{s.version}"}
   s.platform       = :ios, '8.0'
   s.preserve_paths = '*.js'
   s.libraries      = 'z', 'c++'
@@ -19,11 +19,8 @@ Pod::Spec.new do |s|
   s.source_files = 'cocoa/BugsnagReactNative.{h,m}',
                    'cocoa/vendor/bugsnag-cocoa/Source/*.{h,m,mm,cpp,c}',
                    'cocoa/vendor/kscrash/Source/KSCrash/**/*.{h,m,mm,cpp,c}',
-                   'cocoa/vendor/kscrash/Source/Framework/**/*.{h,m,mm,cpp,c}',
+                   'cocoa/vendor/kscrash/Source/Framework/**/*.{h,m,mm,cpp,c}'
 
-  s.public_header_files = 'cocoa/vendor/bugsnag-cocoa/Source/Bugsnag{,MetaData,Configuration,Breadcrumb,CrashReport}.h',
-                          'cocoa/vendor/bugsnag-cocoa/Source/BSGKSCrashReportWriter.h',
-                          'cocoa/BugsnagReactNative.h'
 
   # If Bugsnag is previously installed via CocoaPods, use the Core subspec.
   s.subspec 'Core' do |core|
